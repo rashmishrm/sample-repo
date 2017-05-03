@@ -14,7 +14,6 @@ def print_connections():
                              'status', 'pid'])
         #Sorting connections on the basis of PID
         sorted_connections = sorted(connection_array, key=attrgetter('pid'))
-       
         grouped_map = {}
         pid_count_map={}
         #grouping connections on pid and counting number of connections per pid
