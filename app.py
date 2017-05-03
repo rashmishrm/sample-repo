@@ -18,6 +18,9 @@ def print_connections():
         
         
         
+        
+        
+        
         grouped_map = {}
         pid_count_map={}
         #grouping connections on pid and counting number of connections per pid
