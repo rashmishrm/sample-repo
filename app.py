@@ -7,6 +7,7 @@ from itertools import groupby
 
 #This Function prints all tcp connections grouped by pid,status.
 def print_connections():
+        
         """This Function gets tcp connections and prints status, pid by sorting on the basis of connection status.  """
         connection_array = psutil.net_connections('tcp')
         #Defining socket_conn as namedTuple
