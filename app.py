@@ -2,17 +2,14 @@ from flask import Flask
 from flask import request
 from flask import json
 
-
-<<<<<<< HEAD
 app = Flask(__name__)
 @app.route("/")
 def hello():
     return "Hello from Dockerized Flask App!!"
 
-=======
 #This Function prints all tcp connections grouped by pid,status.
 def print_connections():
-        
+
         """This Function gets tcp connections and prints status, pid by sorting on the basis of connection status.  """
         connection_array = psutil.net_connections('tcp')
         #Defining socket_conn as namedTuple
@@ -26,7 +23,7 @@ def print_connections():
         for key, group in groupby(sorted_connections, key=attrgetter('pid')):
             grouped_map[key] = [e for e in group]
             pid_count_map[key]=len(grouped_map[key])
->>>>>>> origin/master
+
 
 
 if __name__ == "__main__":
